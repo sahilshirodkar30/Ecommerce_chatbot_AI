@@ -65,10 +65,11 @@ def faq_chain(query):
     context = "".join([r.get('answer') for r in results['metadatas'][0]])
     answers = generate_answer(query, context)
     return answers
-    return results
+    
 if __name__ == '__main__':
     #print(faqs_path)
     ingest_faq_data(faqs_path)
     query = "what's your policy on defective products?"
     results = faq_chain(query)
+
     print("Answer:",results)
