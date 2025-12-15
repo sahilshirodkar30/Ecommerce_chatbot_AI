@@ -1,0 +1,10 @@
+streamlit
+sentence-transformers
+torch
+chromadb
+pathlib
+semantic_router
+groq
+python-dotenv
+pandas
+sqlite3
